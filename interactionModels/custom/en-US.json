@@ -1,0 +1,136 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "phrase",
+              "elicitationRequired": true,
+              "type": "phrase",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1533254251438.1393409905466"
+              }
+            }
+          ],
+          "name": "imagineIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "phrase",
+              "type": "phrase",
+              "samples": [
+                "imagine {phrase}"
+              ]
+            }
+          ],
+          "name": "imagineIntent",
+          "samples": [
+            "{phrase}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "A serene sunset over a calm ocean"
+              }
+            },
+            {
+              "name": {
+                "value": "A bustling cityscape with towering skyscrapers"
+              }
+            },
+            {
+              "name": {
+                "value": "A lush green forest with sunlight filtering through the trees"
+              }
+            },
+            {
+              "name": {
+                "value": "A majestic mountain range covered in snow"
+              }
+            },
+            {
+              "name": {
+                "value": "A colorful field of blooming flowers"
+              }
+            },
+            {
+              "name": {
+                "value": "A group of friends laughing and enjoying a picnic in the park"
+              }
+            },
+            {
+              "name": {
+                "value": "A close-up of a vibrant butterfly resting on a flower"
+              }
+            },
+            {
+              "name": {
+                "value": "A stunning aerial view of a winding river flowing through a valley"
+              }
+            },
+            {
+              "name": {
+                "value": "A peaceful countryside landscape with rolling hills and a quaint farmhouse"
+              }
+            },
+            {
+              "name": {
+                "value": "A dramatic lightning storm illuminating the night sky"
+              }
+            }
+          ],
+          "name": "phrase"
+        }
+      ],
+      "invocationName": "imagine this"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What do you want me to imagine?"
+          }
+        ],
+        "id": "Elicit.Slot.1533254251438.1393409905466"
+      }
+    ]
+  }
+}
